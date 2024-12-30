@@ -28,7 +28,7 @@ class Entity(models.Model):
         verbose_name="Поставщик оборудования",
     )
     hierarchy_level = models.IntegerField(
-        editable=False, verbose_name="Уровень иерархии"
+        editable=False, verbose_name="Уровень иерархии", default=0
     )
     debt = models.DecimalField(
         max_digits=15,

@@ -25,5 +25,5 @@ class EntityAdmin(admin.ModelAdmin):
 
 
 @admin.register(Product)
-class FeedbackAdmin(admin.ModelAdmin):
+class ProductAdmin(admin.ModelAdmin):
     list_display = ('name', 'model', 'release_date', 'organization')
