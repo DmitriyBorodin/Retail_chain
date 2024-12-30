@@ -50,7 +50,9 @@ class EntityModelTest(TestCase):
     def test_str_representation(self):
         """Проверяем метод представления str"""
         self.assertEqual(str(self.factory), "Завод 1 (factory, factory1@example.com)")
-        self.assertEqual(str(self.retail), "Розничная сеть 1 (retail, retail1@example.com)")
+        self.assertEqual(
+            str(self.retail), "Розничная сеть 1 (retail, retail1@example.com)"
+        )
 
 
 class ProductModelTest(TestCase):

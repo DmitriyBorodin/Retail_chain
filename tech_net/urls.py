@@ -7,8 +7,8 @@ from .views import EntityViewSet
 app_name = TechNetConfig.name
 
 router = DefaultRouter()
-router.register(r'entities', EntityViewSet, basename='entity')
+router.register(r"entities", EntityViewSet, basename="entity")
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path("", include(router.urls)),
 ]

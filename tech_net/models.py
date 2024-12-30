@@ -8,6 +8,8 @@ ENTITY_TYPE = (
 
 
 class Entity(models.Model):
+    """Модель организации"""
+
     entity_type = models.CharField(
         max_length=255, choices=ENTITY_TYPE, verbose_name="Тип огранизации"
     )
@@ -62,6 +64,8 @@ class Entity(models.Model):
 
 
 class Product(models.Model):
+    """Модель продукта"""
+
     name = models.CharField(max_length=255, verbose_name="Название продукта")
     model = models.CharField(max_length=255, verbose_name="Модель продукта")
     release_date = models.DateField(verbose_name="Дата выхода на рынок")
