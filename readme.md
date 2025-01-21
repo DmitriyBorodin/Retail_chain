@@ -23,7 +23,7 @@
 
 1. Клонируйте репозиторий проекта:
    ```bash
-   git clone git@github.com:DmitriyBorodin/Testovoe.git
+   git clone git@github.com:DmitriyBorodin/Retail_chain.git
    ```
 
 2. Установите зависимости:
